@@ -79,8 +79,8 @@ h2 {
 }
 
 .links a {
-  color: #000000 !important;
-  text-decoration: none !important;
+  color: #0000EE !important;
+  text-decoration: underline !important;
   margin-right: 0.03in !important;
 }
 
