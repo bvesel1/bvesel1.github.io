@@ -1,0 +1,112 @@
+/* Overall page */
+
+body {
+    margin: 0;
+    background: white;
+    color: #111;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* Main content */
+
+.container {
+    width: 700px;
+    max-width: calc(100% - 40px);
+    margin: 50px auto 80px auto;
+}
+
+
+/* Name */
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0 0 55px 0;
+}
+
+
+/* Main section headings */
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    margin: 0 0 28px 0;
+}
+
+
+/* Individual projects */
+
+.project {
+    margin-bottom: 28px;
+}
+
+
+/* Project title */
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+
+    margin: 0 0 5px 0;
+}
+
+
+/* Description */
+
+.project p {
+    margin: 0 0 4px 20px;
+
+    font-style: italic;
+}
+
+
+/* Links */
+
+.links {
+    margin-left: 20px;
+}
+
+.links a {
+    color: #0645ad;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Space before the next main section */
+
+section + section {
+    margin-top: 50px;
+}
+
+
+/* Mobile phones */
+
+@media (max-width: 600px) {
+
+    .container {
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+}
