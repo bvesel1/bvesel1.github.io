@@ -1,120 +1,112 @@
-/* Layout reproduced from Website.docx */
-* {
-  box-sizing: border-box;
-}
+/* Website styling — intentionally matched to the Word document */
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  background: #ffffff;
-  color: #000000;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #ffffff !important;
+  color: #000000 !important;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif !important;
   font-size: 10pt;
   line-height: 1.15;
 }
 
+/* The Word page has a normal document-style left margin. */
 .page {
-  width: min(6.5in, calc(100vw - 1.9in));
-  margin-left: 0.95in;
-  margin-top: 0.63in;
-  padding-bottom: 0.5in;
+  width: 6.5in;
+  max-width: calc(100% - 2in);
+  margin-top: 0.65in !important;
+  margin-left: 1in !important;
+  margin-right: 1in !important;
+  padding: 0 0 0.5in 0 !important;
 }
 
-/* Word Title style: visually matched to the supplied document */
-h1 {
-  margin: 0 0 0.78in 0;
-  padding: 0;
-  font-family: "Arial Black", Arial, Helvetica, sans-serif;
-  font-size: 24pt;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+/* Name: Arial Black, as requested. */
+.name {
+  margin: 0 0 0.78in 0 !important;
+  padding: 0 !important;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif !important;
+  font-size: 24pt !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  letter-spacing: normal !important;
 }
 
-/* Word Heading 1: Arial Black, 14pt, underlined */
+/* Section headings */
 h2 {
-  margin: 0 0 0.42in 0;
-  padding: 0;
-  font-family: "Arial Black", Arial, Helvetica, sans-serif;
-  font-size: 14pt;
-  line-height: 1.05;
-  font-weight: 900;
-  text-decoration: underline;
+  margin: 0 0 0.42in 0 !important;
+  padding: 0 !important;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif !important;
+  font-size: 14pt !important;
+  line-height: 1.05 !important;
+  font-weight: 900 !important;
+  text-decoration: underline !important;
 }
 
-/* Each Word project entry */
 .project {
-  margin: 0 0 0.39in 0;
-  padding: 0;
+  margin: 0 0 0.39in 0 !important;
+  padding: 0 !important;
 }
 
 .project h3 {
-  margin: 0 0 0.08in 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12pt;
-  line-height: 1.15;
-  font-weight: 700;
+  margin: 0 0 0.08in 0 !important;
+  padding: 0 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12pt !important;
+  line-height: 1.15 !important;
+  font-weight: 400 !important;
 }
 
 .description {
-  margin: 0 0 0.07in 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10pt;
-  line-height: 1.15;
-  font-style: italic;
+  margin: 0 0 0.07in 0 !important;
+  padding-left: 0.25in !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 10pt !important;
+  line-height: 1.15 !important;
+  font-style: italic !important;
 }
 
 .links {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10pt;
-  line-height: 1.15;
+  margin: 0 !important;
+  padding-left: 0.25in !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 10pt !important;
+  line-height: 1.15 !important;
 }
 
 .links a {
-  color: #000000;
-  text-decoration: none;
-  margin-right: 0.03in;
+  color: #000000 !important;
+  text-decoration: none !important;
+  margin-right: 0.03in !important;
 }
 
 .links a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
-/* The second Word section begins after the fifth project */
 .notes {
-  margin-top: 0.08in;
+  margin-top: 0.08in !important;
 }
 
 .notes h2 {
-  margin-bottom: 0.42in;
+  margin-bottom: 0.42in !important;
 }
 
-/* Keep the layout close to the one-page Word document on smaller screens */
 @media (max-width: 800px) {
   .page {
-    width: auto;
-    margin-left: 48px;
-    margin-right: 48px;
-    margin-top: 48px;
+    width: auto !important;
+    max-width: none !important;
+    margin-left: 48px !important;
+    margin-right: 48px !important;
   }
 }
 
 @media (max-width: 500px) {
   .page {
-    margin-left: 28px;
-    margin-right: 28px;
-    margin-top: 32px;
-  }
-
-  h1 {
-    font-size: 22pt;
+    margin-left: 32px !important;
+    margin-right: 32px !important;
   }
 }
