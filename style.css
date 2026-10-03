@@ -1,112 +1,120 @@
-/* Overall page */
+/* Layout reproduced from Website.docx */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #000000;
+}
 
 body {
-    margin: 0;
-    background: white;
-    color: #111;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  line-height: 1.15;
 }
 
-
-/* Main content */
-
-.container {
-    width: 700px;
-    max-width: calc(100% - 40px);
-    margin: 50px auto 80px auto;
+.page {
+  width: min(6.5in, calc(100vw - 1.9in));
+  margin-left: 0.95in;
+  margin-top: 0.63in;
+  padding-bottom: 0.5in;
 }
 
-
-/* Name */
-
+/* Word Title style: visually matched to the supplied document */
 h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 32px;
-    font-weight: normal;
-    margin: 0 0 55px 0;
+  margin: 0 0 0.78in 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24pt;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
-
-/* Main section headings */
-
+/* Word Heading 1: Arial Black, 14pt, underlined */
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-
-    margin: 0 0 28px 0;
+  margin: 0 0 0.42in 0;
+  padding: 0;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  line-height: 1.05;
+  font-weight: 900;
+  text-decoration: underline;
 }
 
-
-/* Individual projects */
-
+/* Each Word project entry */
 .project {
-    margin-bottom: 28px;
+  margin: 0 0 0.39in 0;
+  padding: 0;
 }
 
-
-/* Project title */
-
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-
-    margin: 0 0 5px 0;
+.project h3 {
+  margin: 0 0 0.08in 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  line-height: 1.15;
+  font-weight: 700;
 }
 
-
-/* Description */
-
-.project p {
-    margin: 0 0 4px 20px;
-
-    font-style: italic;
+.description {
+  margin: 0 0 0.07in 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  line-height: 1.15;
+  font-style: italic;
 }
-
-
-/* Links */
 
 .links {
-    margin-left: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  line-height: 1.15;
 }
 
 .links a {
-    color: #0645ad;
-    text-decoration: none;
-    margin-right: 8px;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 0.03in;
 }
 
 .links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-/* Space before the next main section */
-
-section + section {
-    margin-top: 50px;
+/* The second Word section begins after the fifth project */
+.notes {
+  margin-top: 0.08in;
 }
 
+.notes h2 {
+  margin-bottom: 0.42in;
+}
 
-/* Mobile phones */
+/* Keep the layout close to the one-page Word document on smaller screens */
+@media (max-width: 800px) {
+  .page {
+    width: auto;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-top: 48px;
+  }
+}
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+  .page {
+    margin-left: 28px;
+    margin-right: 28px;
+    margin-top: 32px;
+  }
 
-    .container {
-        margin-top: 30px;
-    }
-
-    h1 {
-        font-size: 28px;
-        margin-bottom: 40px;
-    }
-
-    h2 {
-        font-size: 17px;
-    }
-
+  h1 {
+    font-size: 22pt;
+  }
 }
